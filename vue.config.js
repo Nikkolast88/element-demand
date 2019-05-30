@@ -6,11 +6,11 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = 'vue Admin Template' // page title
+const name ='vue Admin Template' // page title
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
 // For example, Mac: sudo npm run
-const port = 9528 // dev port
+const port = 9529 // dev port
 
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
@@ -44,7 +44,7 @@ module.exports = {
         }
       }
     },
-    // after: require('./mock/mock-server.js')
+    after: require('./mock/mock-server.js')
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
